@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UF1</string>
+    <string name="activity2">Activity2</string>
+    <string name="activity2_result">Activity2 For result</string>
+    <string name="returnA1">Volver a la actividad 1</string>
+    <string name="texto">Texto</string>
+    <string name="button">Button</string>
+</resources>
