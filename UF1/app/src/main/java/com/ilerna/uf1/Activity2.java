@@ -18,11 +18,16 @@ public class Activity2 extends AppCompatActivity {
         textView = findViewById(R.id.textView2);
         Bundle extras = getIntent().getExtras();
         if (extras !=null) {
-            String name = extras.getString("name");
-            textView.setText(name);
+            int edad = extras.getInt("edad");
+            textView.setText(String.valueOf(edad));
         }
     }
 
 
-
+    public void volverActivity1(View view) {
+        Intent intent = new Intent(Activity2.this,MainActivity.class);
+        intent.putExtra("clase","TODO HA IDO OK");
+        setResult(RESULT_OK,intent);
+        finish();
+    }
 }
