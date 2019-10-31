@@ -10,32 +10,21 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="167dp"
-        android:layout_marginLeft="167dp"
-        android:layout_marginTop="343dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginRight="185dp"
-        android:layout_marginBottom="369dp"
         android:text="@string/activity2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginRight="167dp"
-        android:layout_marginBottom="245dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="volverActivity1"
         android:text="@string/returnA1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:onClick="volverActivity1"/>
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

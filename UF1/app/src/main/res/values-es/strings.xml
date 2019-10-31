@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UF1</string>
+    <string name="activity2">Activity2</string>
+    <string name="activity2_result">Activity2 para resultado</string>
+    <string name="returnA1">Volver a la Actividad1</string>
+    <string name="irActivity2">Ir a la Actividad2</string>
+    <string name="register">Registro</string>
+    <string name="foto">Logo para la aplicación</string>
+</resources>

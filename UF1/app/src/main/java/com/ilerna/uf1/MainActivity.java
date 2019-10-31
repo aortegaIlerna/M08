@@ -5,14 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
+import android.text.method.MovementMethod;
+import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    public final int CODE_ACTIVITY2=2;
+    public final int CODE_ACTIVITY2 = 2;
 
     TextView textView;
     Button b1;
@@ -22,13 +25,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textView);
+        textView.setMovementMethod(new ScrollingMovementMethod());
         b1 = findViewById(R.id.alvaroButton);
-        b1.setOnClickListener(new View.OnClickListener(){
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent intent = new Intent(MainActivity.this,Activity2.class);
-                intent.putExtra("edad",25);
-                startActivityForResult(intent,CODE_ACTIVITY2);
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Activity2.class);
+                intent.putExtra("edad", 25);
+                startActivityForResult(intent, CODE_ACTIVITY2);
             }
 
         });
@@ -42,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         textView.append("OnStart();\n");
         Toast.makeText(this, "OnStart();\n", Toast.LENGTH_SHORT).show();
     }
+
 
     @Override
     protected void onResume() {
